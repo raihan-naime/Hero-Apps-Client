@@ -112,7 +112,7 @@ const AllAppsPage = () => {
         {/* Loading State */}
         <>
           {/* Apps Grid */}
-          <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
+          <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
             {apps.length === 0 ? (
               <div className="col-span-full text-center py-10 space-y-10">
                 <h2 className="text-6xl font-semibold opacity-60">

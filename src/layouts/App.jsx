@@ -21,8 +21,8 @@ function App() {
   }
 
   return (
-    <div>
-      <header>
+    <div className="max-w-7xl mx-auto">
+      <header className="sticky top-0">
         <Header />
       </header>
 
