@@ -4,6 +4,7 @@ import Footer from "../ui/Footer";
 import LoadingPage from "../ui/LoadingPage";
 import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
+import UserReviews from "../Components/UserReviews";
 
 function App() {
   const { state } = useNavigation();
@@ -22,12 +23,13 @@ function App() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <header className="sticky top-0">
+      <header className="sticky z-50 top-0">
         <Header />
       </header>
 
       <main className="min-h-screen">
         <Outlet />
+        <UserReviews></UserReviews>
       </main>
 
       <footer>

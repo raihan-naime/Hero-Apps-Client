@@ -11,7 +11,7 @@ const Home = () => {
       <section className="py-10 bg-gradient-to-tl to-[#632EE3] from-[#9F62F2] ">
         <Stats></Stats>
       </section>
-      <section className="py-16">
+      <section className="pt-16">
         <OurApps></OurApps>
       </section>
     </div>
