@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
     return sendEmailVerification(auth.currentUser);
   };
 
-  // 🔥 All auth values available to the app
+
   const authValue = {
     user,
     loading,

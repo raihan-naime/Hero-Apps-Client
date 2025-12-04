@@ -1,3 +1,6 @@
+
+import FeaturedDevelopers from "../Components/FeaturedDevelopers";
+import UserReviews from "../Components/UserReviews";
 import Banner from "../ui/Banner";
 import OurApps from "../ui/OurApps";
 import Stats from "../ui/Stats";
@@ -13,7 +16,10 @@ const Home = () => {
       </section>
       <section className="pt-16">
         <OurApps></OurApps>
+        <UserReviews></UserReviews>
+        <FeaturedDevelopers></FeaturedDevelopers>
       </section>
+      
     </div>
   );
 };

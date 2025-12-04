@@ -1,10 +1,11 @@
 import { Link, NavLink } from "react-router";
 // import logo from "../assets/logo.png";
 import Logo from "./Logo";
-import { BiBookContent, BiHome } from "react-icons/bi";
+import { BiBookContent, BiHome, BiSupport } from "react-icons/bi";
 import { FaAppStore } from "react-icons/fa6";
 import { BsGithub } from "react-icons/bs";
 import { MdInstallDesktop } from "react-icons/md";
+import { FcAbout } from "react-icons/fc";
 
 const Header = () => {
   const nav = (
@@ -23,6 +24,16 @@ const Header = () => {
       <li>
         <NavLink to="/installations" className="text-gray-500 font-semibold">
           <MdInstallDesktop size={20} /> Installation
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about" className="text-gray-500 font-semibold">
+          <FcAbout size={20} /> About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/support" className="text-gray-500 font-semibold">
+          <BiSupport size={20} /> Support
         </NavLink>
       </li>
     </>

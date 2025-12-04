@@ -4,7 +4,6 @@ import Footer from "../ui/Footer";
 import LoadingPage from "../ui/LoadingPage";
 import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
-import UserReviews from "../Components/UserReviews";
 
 function App() {
   const { state } = useNavigation();
@@ -29,7 +28,7 @@ function App() {
 
       <main className="min-h-screen">
         <Outlet />
-        <UserReviews></UserReviews>
+        
       </main>
 
       <footer>

@@ -6,6 +6,9 @@ import LoadingPage from "../ui/LoadingPage";
 import AppDetails from "../pages/AppDetails";
 import MyInstallation from "../pages/MyInstallation";
 import ErrorPage from "../ui/Error404";
+import AboutUsPage from "../pages/AboutUsPage";
+import SupportPage from "../pages/SupportPage";
+import LoginForm from "../pages/Auth/LoginForm";
 
 const router = createBrowserRouter([
   {
@@ -36,9 +39,17 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:5000/apps"),
       },
       {
-        path: "/blogs",
-        element: <h2>Single Items</h2>,
+        path: "/about",
+        element: <AboutUsPage></AboutUsPage>,
       },
+      {
+        path: "/support",
+        element: <SupportPage></SupportPage>,
+      },
+      {
+        path: '/login',
+        Component: LoginForm
+      }
     ],
   },
 ]);
